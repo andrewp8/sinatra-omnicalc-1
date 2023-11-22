@@ -43,3 +43,13 @@ get("/payment/results"){
   @converted_result = result.to_fs(:currency)
   erb(:payment_results)
 }
+
+get("/random/new"){
+  erb(:random_new)
+}
+get("/random/results"){
+  @min = params.fetch("user_min")
+  @max = params.fetch("user_max")
+  @result = rand(@min.to_f..@max.to_f).round(17r)
+  erb(:random_results)
+}
