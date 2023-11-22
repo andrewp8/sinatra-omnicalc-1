@@ -18,3 +18,8 @@ get("/square_root/new"){
 get("/square_root/results"){
   erb(:square_root_results)
 }
+
+get("/square_root/results"){
+  erb(:square_root_results)
+}
+
