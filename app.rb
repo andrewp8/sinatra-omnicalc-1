@@ -22,4 +22,6 @@ get("/square_root/results"){
 get("/square_root/results"){
   erb(:square_root_results)
 }
-
+get("/square_root/results"){
+  erb(:square_root_results)
+}
