@@ -1,4 +1,4 @@
-   <%= params %>
+
     <h1>
   Payment Results
 </h1>
@@ -8,28 +8,28 @@
     APR
   </dt>
   <dd>
-    <%= params.fetch("user_apr").to_fs(:percentage,{:precision => 4}) %>
+    <%= @converted_apr %>
   </dd>
 
   <dt>
     Number of years
   </dt>
   <dd>
-    4
+    <%= @converted_years %>
   </dd>
 
   <dt>
     Principal
   </dt>
   <dd>
-    $42.00
+    <%= @converted_pv %>
   </dd>
 
   <dt>
     Payment
   </dt>
   <dd>
-    $0.99
+    <%= @converted_result %>
   </dd>
 </dl>
 
